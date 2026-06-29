@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@config '../tailwind.config.ts';
+
+@theme {
+  --font-family-sans: var(--font-sans);
+  --font-family-serif: var(--font-serif);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
