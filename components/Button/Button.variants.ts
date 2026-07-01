@@ -1,12 +1,12 @@
 import { cva } from 'class-variance-authority';
-import { textSizes, textColors } from '../baseStyles';
+import { backgroundColors, textSizes, textColors } from '../baseStyles';
 
 export const buttonVariants = cva('cursor-pointer rounded-sm', {
   variants: {
     variant: {
-      solid: `${textColors.inverse} bg-black transition-colors hover:bg-gray-800 active:bg-gray-800 focus:bg-gray-800 dark:hover:bg-gray-100 dark:active:bg-gray-100 dark:focus:bg-gray-100`,
-      outline: `${textColors.primary} border-1 border-black transition-colors dark:border-white hover:bg-gray-100 active:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-800 dark:active:bg-gray-800 dark:focus:bg-gray-800`,
-      ghost: `${textColors.primary} transition-colors hover:bg-gray-100 active:bg-gray-100 focus:bg-gray-100 dark:hover:bg-gray-900 dark:active:bg-gray-900 dark:focus:bg-gray-900`,
+      solid: `${textColors.inverse} transition-colors ${backgroundColors.primaryAction} ${backgroundColors.primaryActionHover} ${backgroundColors.primaryActionFocus} ${backgroundColors.primaryActionActive}`,
+      outline: `${textColors.primary} transition-colors border-1 border-black dark:border-white ${backgroundColors.secondaryActionHover} ${backgroundColors.secondaryActionFocus} ${backgroundColors.secondaryActionActive}`,
+      ghost: `${textColors.primary} transition-colors ${backgroundColors.secondaryActionHover} ${backgroundColors.secondaryActionFocus} ${backgroundColors.secondaryActionActive}`,
     },
     size: {
       sm: '',

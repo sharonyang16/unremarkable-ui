@@ -1,11 +1,11 @@
 import { cva } from 'class-variance-authority';
-import { textSizes, textColors } from '../baseStyles';
+import { backgroundColors, textSizes, textColors } from '../baseStyles';
 
 export const chipVariants = cva('inline-flex items-center rounded-full w-fit', {
   variants: {
     variant: {
-      solid: `${textColors.inverse} bg-black dark:bg-white `,
-      subtle: `${textColors.primary} bg-gray-200 dark:bg-gray-800`,
+      solid: `${textColors.inverse} ${backgroundColors.primaryAction}`,
+      subtle: `${textColors.primary} ${backgroundColors.secondaryAction}`,
       outline: `${textColors.primary} border-1 border-black dark:border-white`,
     },
     size: {
