@@ -1,11 +1,17 @@
 import { cva } from 'class-variance-authority';
-import { backgroundColors, textSizes, textColors } from '../baseStyles';
+import {
+  backgroundColors,
+  borderColors,
+  borderWidths,
+  textColors,
+  textSizes,
+} from '../baseStyles';
 
 export const buttonVariants = cva('cursor-pointer rounded-sm', {
   variants: {
     variant: {
       solid: `${textColors.inverse} transition-colors ${backgroundColors.primaryAction} ${backgroundColors.primaryActionHover} ${backgroundColors.primaryActionFocus} ${backgroundColors.primaryActionActive}`,
-      outline: `${textColors.primary} transition-colors border-1 border-black dark:border-white ${backgroundColors.secondaryActionHover} ${backgroundColors.secondaryActionFocus} ${backgroundColors.secondaryActionActive}`,
+      outline: `${textColors.primary} transition-colors ${borderWidths[1]} ${borderColors.primary} ${backgroundColors.secondaryActionHover} ${backgroundColors.secondaryActionFocus} ${backgroundColors.secondaryActionActive}`,
       ghost: `${textColors.primary} transition-colors ${backgroundColors.secondaryActionHover} ${backgroundColors.secondaryActionFocus} ${backgroundColors.secondaryActionActive}`,
     },
     size: {
