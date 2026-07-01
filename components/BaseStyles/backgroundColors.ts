@@ -1,4 +1,6 @@
 export const backgroundColors = {
+  primary: 'bg-white dark:bg-black',
+  subtle: 'bg-gray-200 dark:bg-gray-800',
   primaryAction: 'bg-black dark:bg-white',
   primaryActionHover: 'hover:bg-gray-800 dark:hover:bg-gray-100',
   primaryActionActive: 'active:bg-gray-800 dark:active:bg-gray-100',

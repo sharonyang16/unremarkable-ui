@@ -11,7 +11,7 @@ export const chipVariants = cva('inline-flex items-center rounded-full w-fit', {
   variants: {
     variant: {
       solid: `${textColors.inverse} ${backgroundColors.primaryAction}`,
-      subtle: `${textColors.primary} ${backgroundColors.secondaryAction}`,
+      subtle: `${textColors.primary} ${backgroundColors.subtle}`,
       outline: `${textColors.primary} ${borderWidths[1]} ${borderColors.primary}`,
     },
     size: {
