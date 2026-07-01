@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority';
-import { textSizes, textColors } from '../BaseStyles';
+import { textSizes, textColors } from '../baseStyles';
 
 export const chipVariants = cva('inline-flex items-center rounded-full w-fit', {
   variants: {

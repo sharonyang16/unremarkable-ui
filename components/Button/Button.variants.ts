@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority';
-import { textSizes, textColors } from '../BaseStyles';
+import { textSizes, textColors } from '../baseStyles';
 
 export const buttonVariants = cva('cursor-pointer rounded-sm', {
   variants: {
