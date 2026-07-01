@@ -1,5 +1,5 @@
 import { cva } from 'class-variance-authority';
-import { textSizes, textColors } from '../baseStyles';
+import { textSizes, textColors } from '../baseStyle';
 
 export const typographyVariants = cva('', {
   variants: {

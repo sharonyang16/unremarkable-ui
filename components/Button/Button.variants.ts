@@ -5,7 +5,7 @@ import {
   borderWidths,
   textColors,
   textSizes,
-} from '../baseStyles';
+} from '../baseStyle';
 
 export const buttonVariants = cva('cursor-pointer rounded-sm', {
   variants: {

@@ -5,7 +5,7 @@ import {
   borderWidths,
   textColors,
   textSizes,
-} from '../baseStyles';
+} from '../baseStyle';
 
 export const chipVariants = cva('inline-flex items-center rounded-full w-fit', {
   variants: {

@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 import { buttonVariants } from '../Button/Button.variants';
-import { textSizes, textColors } from '../baseStyles';
+import { textSizes, textColors } from '../baseStyle';
 
 export const linkVariants = cva('cursor-pointer', {
   variants: {
