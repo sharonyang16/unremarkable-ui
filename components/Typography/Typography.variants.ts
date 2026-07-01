@@ -1,24 +1,25 @@
 import { cva } from 'class-variance-authority';
+import { textSizes, textColors } from '../BaseStyles';
 
 export const typographyVariants = cva('', {
   variants: {
     variant: {
-      h1: 'font-semibold text-[64px] font-serif leading-[1.25]',
-      h2: 'font-semibold text-[48px] font-serif leading-[1.25]',
-      h3: 'font-semibold text-[36px] font-serif leading-[1.25]',
-      h4: 'font-semibold text-xl leading-[1.25]',
-      h5: 'font-semibold text-lg leading-[1.25]',
-      h6: 'font-semibold text-base leading-[1.25]',
-      label1: 'font-medium text-base leading-[1.25]',
-      label2: 'font-medium text-sm leading-[1.25]',
-      body1: 'font-normal text-base leading-[1.25]',
-      body2: 'font-normal text-sm leading-[1.25]',
+      h1: textSizes.h1,
+      h2: textSizes.h2,
+      h3: textSizes.h3,
+      h4: textSizes.h4,
+      h5: textSizes.h5,
+      h6: textSizes.h6,
+      label1: textSizes.label1,
+      label2: textSizes.label2,
+      body1: textSizes.body1,
+      body2: textSizes.body2,
     },
     color: {
-      primary: 'text-black dark:text-white',
-      secondary: 'text-gray-700 dark:text-gray-300',
-      inverse: 'text-white dark:text-black',
-      inherit: 'text-inherit',
+      primary: textColors.primary,
+      secondary: textColors.secondary,
+      inverse: textColors.inverse,
+      inherit: textColors.inherit,
     },
   },
   defaultVariants: {
