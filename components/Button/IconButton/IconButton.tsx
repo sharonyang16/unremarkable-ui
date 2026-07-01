@@ -1,9 +1,7 @@
 import React from 'react';
 import { cn } from '../../utils';
 import { buttonVariants } from '../Button.variants';
-import { Typography } from '../../Typography';
 import { type IconButtonProps } from '../Button.types';
-import { iconButtonSizeMap } from '../Button.utils';
 
 export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
   (
@@ -25,9 +23,7 @@ export const IconButton = React.forwardRef<HTMLButtonElement, IconButtonProps>(
         )}
         {...props}
       >
-        <Typography variant={iconButtonSizeMap[size ?? 'md']} color="inherit">
-          <IconComponent />
-        </Typography>
+        <IconComponent />
       </button>
     );
   }

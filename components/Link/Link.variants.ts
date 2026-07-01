@@ -1,43 +1,23 @@
 import { cva } from 'class-variance-authority';
 import { buttonVariants } from '../Button/Button.variants';
-import { typographyVariants } from '../Typography/Typography.variants';
+import { textSizes, textColors } from '../baseStyles';
 
 export const linkVariants = cva('cursor-pointer', {
   variants: {
     variant: {
-      plain: 'text-black dark:text-white',
-      buttonSolid: buttonVariants({ variant: 'solid', kind: 'button' }),
-      buttonOutline: buttonVariants({ variant: 'outline', kind: 'button' }),
-      iconButtonSolid: buttonVariants({ variant: 'solid', kind: 'icon' }),
-      iconButtonOutline: buttonVariants({ variant: 'outline', kind: 'icon' }),
+      plain: textColors.primary,
+      buttonSolid: '',
+      buttonOutline: '',
+      iconButtonSolid: '',
+      iconButtonOutline: '',
     },
     size: {
-      sm: '',
-      md: '',
-      lg: '',
+      sm: textSizes.body2,
+      md: textSizes.body1,
+      lg: textSizes.h6,
     },
   },
   compoundVariants: [
-    {
-      variant: 'plain',
-      size: 'sm',
-      class: typographyVariants({ variant: 'body2' }),
-    },
-    {
-      variant: 'plain',
-      size: 'md',
-      class: typographyVariants({
-        variant: 'body1',
-      }),
-    },
-    {
-      variant: 'plain',
-      size: 'lg',
-      class: typographyVariants({
-        variant: 'h6',
-      }),
-    },
-
     {
       variant: 'buttonSolid',
       size: 'sm',
