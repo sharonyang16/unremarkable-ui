@@ -1,9 +1,7 @@
 import React from 'react';
 import { cn } from '../utils';
 import { buttonVariants } from './Button.variants';
-import { Typography } from '../Typography';
 import { type ButtonProps } from './Button.types';
-import { buttonSizeMap } from './Button.utils';
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
@@ -19,9 +17,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
         )}
         {...props}
       >
-        <Typography variant={buttonSizeMap[size ?? 'md']} color="inherit">
-          <div className="flex gap-2 items-center">{children}</div>
-        </Typography>
+        <div className="flex gap-2 items-center">{children}</div>
       </button>
     );
   }

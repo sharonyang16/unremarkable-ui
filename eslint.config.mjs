@@ -11,6 +11,12 @@ const eslintConfig = defineConfig([
   ...tseslint.configs.recommended,
   { files: ['**/*.{js,ts}'] },
   { ignores: ['node_modules/**', 'dist/**', 'out/**', 'build/**'] },
+  {
+    rules: {
+      'no-unused-vars': 'warn',
+      '@typescript-eslint/no-unused-vars': ['warn'],
+    },
+  },
 ]);
 
 export default eslintConfig;
