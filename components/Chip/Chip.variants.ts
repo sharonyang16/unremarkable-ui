@@ -1,18 +1,23 @@
 import { cva } from 'class-variance-authority';
-import { cn } from '../utils';
-import { typographyVariants } from '../Typography/Typography.variants';
+import {
+  backgroundColors,
+  borderColors,
+  borderWidths,
+  textColors,
+  textSizes,
+} from '../baseStyles';
 
 export const chipVariants = cva('inline-flex items-center rounded-full w-fit', {
   variants: {
     variant: {
-      solid: 'bg-black dark:bg-white',
-      subtle: 'bg-gray-200 dark:bg-gray-800',
-      outline: 'border-1 border-black dark:border-white',
+      solid: `${textColors.inverse} ${backgroundColors.primaryAction}`,
+      subtle: `${textColors.primary} ${backgroundColors.subtle}`,
+      outline: `${textColors.primary} ${borderWidths[1]} ${borderColors.primary}`,
     },
     size: {
-      sm: cn('py-0.5 px-2', typographyVariants({ variant: 'body2' })),
-      md: 'py-1 px-2.5',
-      lg: 'py-1.5 px-3',
+      sm: `py-0.5 px-2 ${textSizes.body2}`,
+      md: `py-1 px-2.5 ${textSizes.body2}`,
+      lg: `py-1.5 px-3 ${textSizes.body1}`,
     },
   },
   defaultVariants: {
